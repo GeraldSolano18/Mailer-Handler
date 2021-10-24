@@ -7,6 +7,10 @@ const app = express();
 //Settings
 app.set("port", process.env.PORT || 4000);
 
+app.listen(app.get('port'), ()=>{
+    console.log('server on port ', app.get('port'))
+})
+
 //body parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
