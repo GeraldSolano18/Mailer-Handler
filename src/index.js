@@ -19,6 +19,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 //routes
-app.use("/server/email", emailRoutes);
+app.use("/email", emailRoutes);
 
 export default app;
